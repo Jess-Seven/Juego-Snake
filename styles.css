@@ -1,0 +1,53 @@
+*{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#board, .boardInfo { /* Se colocan los selectores juntos porque se va a agregar un cambio que ambos lo necesitan */
+    max-width: 500px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+}
+
+#gameOver {
+    display: none;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between; /*Esto es lo que hace que tanto score como el boton se separen colocandose uno a cada lado con el espacio en el centro*/
+    margin-top: 10px;
+}
+
+#start {
+    background-color: #f35a69;
+    border: none;
+    border-radius: 0.5rem;  
+    color: white;
+}
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+.square { /* Tanto este como los selectores de delante de este son selectores de no se encuentran en el html porque esto van a ir apareciendo cuando los generemos con JavaScript*/
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: #456990;
+}
+
+.snakeSquare {
+    background-color: #ccf47f;
+}
+
+.foodSquare {
+    background-color: #f35a69;
+}
