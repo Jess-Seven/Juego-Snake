@@ -46,6 +46,9 @@
 
 .snakeSquare {
     background-color: #ccf47f;
+    border-radius: 0.5rem;
+    border: 1.8px solid #aac874;
+    box-shadow: 8px 1px 8px rgba(64, 154, 238, 0.504) /*#637e9b;*/
 }
 
 .foodSquare {
