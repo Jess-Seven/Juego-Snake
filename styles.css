@@ -1,5 +1,6 @@
 *{
     font-family: 'Share Tech Mono', monospace;
+    background-color: #456990;
 }
 
 #board, .boardInfo { /* Se colocan los selectores juntos porque se va a agregar un cambio que ambos lo necesitan */
@@ -32,8 +33,14 @@
     color: white;
 }
 
+.colorText {
+    color: white;
+    font-size: 35px;
+}
+
 #scoreBoard {
     display: inline-flex;
+    color: beige;
 }
 
 .square { /* Tanto este como los selectores de delante de este son selectores de no se encuentran en el html porque esto van a ir apareciendo cuando los generemos con JavaScript*/
@@ -42,6 +49,8 @@
 
 .emptySquare {
     background-color: #456990;
+    border-radius: 0.5rem;
+    border: 1.8px solid #85b7ec;
 }
 
 .snakeSquare {
@@ -53,4 +62,6 @@
 
 .foodSquare {
     background-color: #f35a69;
+    border-radius: 0.5rem;
+    border: 1.8px solid #dc172b;
 }
