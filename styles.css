@@ -3,8 +3,25 @@
     background-color: #456990;
 }
 
+body {
+    margin: 100px;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #466995;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #board, .boardInfo { /* Se colocan los selectores juntos porque se va a agregar un cambio que ambos lo necesitan */
-    max-width: 500px;
+    /* max-width: 500px; */
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 500px;
+    height: 500px;
+
 }
 
 #board {
@@ -14,6 +31,7 @@
 
 #start, .boardInfo {
     font-size: 25px;
+
 }
 
 #gameOver {
@@ -31,6 +49,8 @@
     border: none;
     border-radius: 0.5rem;  
     color: white;
+    height: 50px;
+    width: 100px;
 }
 
 .colorText {

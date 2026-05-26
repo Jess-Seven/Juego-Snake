@@ -161,7 +161,8 @@ const setGame = () => { // Esta funcion lo que hace es configurar el juego inici
 // "moveInterval = setInterval..."Esta linea hace que la serpiente se mueva cada cierta cantidad de tiempo y esto se logra con una funcion propia del lenguaje 'setInterval()' esta repite la instruccion que le indiquemos (mover la serpiente) luego de pasar una cantidad espesifica de tiempo, donde el primer parametro es '() => moveSnake()' y es la acciona a realizar y 'gameSpeed' es el tiempo a esperar para repetir nuevamente la accion donde su valor es de '100' pero esto en realidad representa en segundos '0.1 segundos' quiere decir que cada 0.1 segundos la funcion 'setInterval' está ejecutandose, teniendo en cuentra que cada accion espera que el intervalo que va delante de este se ejecute hasta terminar para luego este realizar nuevamente la accion.
 const startGame = () => {
     setGame();
-    gameOverSing.style.display = 'none';
+    // gameOverSing.style.display = 'none';
+    gameOverSing.style.display = 'flex';
     startButton.disabled = true; // Con esta linea logramos bloquear la funcion de iniciar el juego una vez ya se haya iniciado el juego mientras este esté en curso.
     drawSnake();
     updateScore();
